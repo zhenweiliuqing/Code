@@ -1,0 +1,12 @@
+这几道题框架都一样
+
+void dfs(TreeNode* root, int sum) {
+    if (root == nullptr)
+        return;
+    sum += root->val; // 或者其他进行操作一下
+    if (root->left == nullptr && root->right == nullptr) {
+        // 到达子节点进行一下操作
+    }
+    dfs(root->left, sum);
+    dfs(root->right, sum);
+}
